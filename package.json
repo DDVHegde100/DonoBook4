@@ -1,34 +1,46 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+  "name": "cli-cursor",
+  "version": "2.1.0",
+  "description": "Toggle the CLI cursor",
+  "license": "MIT",
+  "repository": "sindresorhus/cli-cursor",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
   },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "cli",
+    "cursor",
+    "ansi",
+    "toggle",
+    "display",
+    "show",
+    "hide",
+    "term",
+    "terminal",
+    "console",
+    "tty",
+    "shell",
+    "command-line"
+  ],
   "dependencies": {
-    "expo": "^38.0.0",
-    "firebase": "^7.9.0",
-    "gesture": "^0.1.0",
-    "handler": "^0.1.3",
-    "lottie-react-native": "~2.6.1",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
-    "react-native": "^0.62.2",
-    "react-native-elements": "^1.2.7",
-    "react-native-gesture-handler": "~1.6.0",
-    "react-native-reanimated": "~1.9.0",
-    "react-native-screens": "^2.9.0",
-    "react-native-web": "~0.11.7",
-    "react-navigation": "^4.3.7",
-    "react-navigation-drawer": "^2.6.0",
-    "react-navigation-tabs": "^2.8.11",
-    "reanimated": "^0.0.1-alpha"
+    "restore-cursor": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.6",
-    "babel-preset-expo": "^8.2.3"
+    "ava": "*",
+    "xo": "*"
   },
-  "private": true
+  "xo": {
+    "esnext": true
+  }
 }
